@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Wan't me to tell you the weather? Gimme a zipcode or city bruh</legend>
+        <label for="input">Zip Code:</label>
+        <input type="text" name="Zip Code" id="zipcode">
+        <div></div>
+        <label for="input">City Name:</label>
+        <input type="text" name="City Name" id="city">
+        <input type="submit" id="locSubmit">
+      </fieldset>
+    </form>
+    <div>
+      <h2>BE PREPARED FOR THE INCOMING WEATHER</h2>
+      <img src="https://i.ytimg.com/vi/fz1Zwag88rI/maxresdefault.jpg" width="50%" height="50%">
+      <ul>
+        <li><span>City name:</span><span id="currentCity"></span></li>
+        <li><span>Current Tempature:</span><span id="currentTemp"></span></li>
+        <li><span>Current Humidity:</span><span id="currentHumidity"></span></li>
+      </ul>
+    </div>
+    <script src ="weather.js">
+      
+    </script>
+
+    <form>
+      <fieldset>
+        <legend> So apparently im supposed to display back whatever data i input into this handy dandy box here.</legend>
+        <label for="input">Type something here:</label>
+        <input type="text" name="databeingsent" id="outGoingData">
+        <input type="submit" id="sendData">
+      </fieldset>
+    </form>
+    <div>
+      <h2>Heres your filthy data back:</h2>
+      <ul>
+        <li>
+          <span>This is what you inputted right? (in string form): </span><span id="responseData"></span>
+        </li>
+      </ul>
+    </div>
+
+    <script src ="httpbin.js">
+    
+
+    </script>
+  </body>
+</html>
+
+
